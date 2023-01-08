@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #40375c;
+  background-image: url('/images/bg.png');
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.link-hover:hover {
+  color: #4786e5;
+  fill: #4786e5;
+}
+
+/* Heading section */
+
+.heading-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 15px;
+  padding-top: 20px;
+  background-color: #1f1f1f;
+  background-image: url('/images/bg3.png');
+}
+
+.heading-section h1 {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 900;
+  margin: 0;
+}
+
+.devices-list-section {
+  padding: 0% 10% 5%;
+}
+
+/* Device item */
+
+.devices-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.devices-list-container + .devices-list-container {
+  margin-top: 25px;
+}
+
+.devices-list-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.devices-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6px;
+}
+
+.device-item {
+  display: flex;
+  flex-direction: column;
+  width: 29%;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  border: 0.8px solid #1a1f2c;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #37415c;
+  background-image: url('/images/bg2.png');
+}
+
+.device-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.device-item h3 {
+  font-size: 1.4rem;
+  padding-left: 15px;
+  display: flex;
+}
+
+.title-name {
+  text-align: center;
+}
+
+.device-container {
+  display: flex;
+}
+
+.image-container {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.device-img {
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: 1s ease;
+}
+
+.device-img:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s ease;
+}
+
+.device-details {
+  padding-left: 15px;
+  margin: 12px 0;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.desc-header {
+  font-weight: 600;
+}
+
+/* Footer section */
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 18px;
+  background-image: url('/images/bg3.png');
+  background-color: #1f1f1f;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #4786e5;
+}
+
+/* Scrollbar Section*/
+
+/* scrollbar width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* scrollbar Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: #37415c; 
+  border-radius: 10px;
+}
+
+/* scrollbar Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4786e5; 
+}
+
+
+/* Media Query from Tablets */
+
+@media (max-width: 1044px) {
+  .device-item {
+    width: 44%;
+  }
+
+  .heading-section {
+    font-size: 2.2rem;
+  }
+}
+
+/* Media Query for Smartphones */
+
+@media (max-width: 768px) {
+  .device-item {
+    width: 98%;
+  }
+
+  .heading-section {
+    font-size: 2rem;
+  }
+}
